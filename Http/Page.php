@@ -15,13 +15,13 @@ class Http_Page {
      * process before servicing the request
      * @param Http_FilterChain $responseFilterChain chain of filters to
      * process after servicing the request
-     * @param EC_Controller $controller controller to invoke process 
+     * @param Controller $controller controller to invoke process 
      * specific request with
      */
     public function __construct(
         Http_FilterChain $requestFilterChain,
         Http_FilterChain $responseFilterChain,
-        EC_Controller $controller) {
+        Controller $controller) {
 
         $this->requestFilterChain = $requestFilterChain;
         $this->responseFilterChain = $responseFilterChain;
